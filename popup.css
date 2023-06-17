@@ -1,0 +1,152 @@
+body {
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a7cdeb;
+}
+
+.circle {
+  position: relative;
+  padding: 0;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backface-visibility: hidden; /* Added backface-visibility property */
+}
+
+
+  #spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #a7cdeb;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+  
+  
+  li {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+  }
+  
+  .text {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    transform: skewY(45deg) rotate(22.5deg);
+    padding-top: 20px;
+    font-family: Georgia,Cambria,Times New Roman,Times,serif;
+  }
+  
+  li:first-child {
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  li:nth-child(2) {
+    transform: rotate(45deg) skewY(-45deg);
+  }
+  
+  li:nth-child(3) {
+    transform: rotate(90deg) skewY(-45deg);
+  }
+  
+  li:nth-child(4) {
+    transform: rotate(135deg) skewY(-45deg);
+  }
+  
+  li:nth-child(5) {
+    transform: rotate(180deg) skewY(-45deg);
+  }
+  
+  li:nth-child(6) {
+    transform: rotate(225deg) skewY(-45deg);
+  }
+  
+  li:nth-child(7) {
+    transform: rotate(270deg) skewY(-45deg);
+  }
+  
+  li:nth-child(8) {
+    transform: rotate(315deg) skewY(-45deg);
+  }
+  
+  li:first-child .text {
+    background: #ffa6a4;
+  }
+  
+  li:nth-child(2) .text {
+    background: #fed5cc;
+  }
+  
+  li:nth-child(3) .text {
+    background: #b7e3ee;
+  }
+  
+  li:nth-child(4) .text {
+    background: #ffe7d9;
+  }
+  
+  li:nth-child(5) .text {
+    background: #ffa6a4;
+  }
+  
+  li:nth-child(6) .text {
+    background: #fed5cc;
+  }
+  
+  li:nth-child(7) .text {
+    background: #b7e3ee;
+  }
+  
+  li:nth-child(8) .text {
+    background: #ffe7d9;
+  }
+
+  #arrow {
+    position: absolute;
+    top: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+  }
+
+  .result-text {
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia,Cambria,Times New Roman,Times,serif;
+  }
+  
+  
+  
